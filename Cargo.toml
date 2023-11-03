@@ -1,0 +1,27 @@
+[package]
+name = "mi_proyecto"
+version = "0.1.0"
+edition = "2018"
+
+[[bin]]
+name = "tasks"
+path = "./main.rs"
+
+[dependencies]
+# Dependencias del proyecto
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+
+dotenv = "0.15"
+mysql = "20"
+warp = "0.3"
+
+[dev-dependencies]
+# Dependencias de desarrollo (pruebas, documentación, etc.)
+warp = "0.3"
+mockito = "1.1"
+dotenv = "0.15"
+mysql = "20"
+serde = { version = "1.0", features = ["derive"] }
+
+
